@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Methods Example</title>
+</head>
+<body>
+  <h2>Array Methods in JavaScript</h2>
+
+  <h3>1️ push() Example</h3>
+  <p id="push"></p>
+
+  <h3>2️ pop() Example</h3>
+  <p id="pop"></p>
+
+  <h3>3️ shift() Example</h3>
+  <p id="shift"></p>
+
+  <h3>4️ unshift() Example</h3>
+  <p id="unshift"></p>
+
+  <h3>5️ Print Array using for loop</h3>
+  <p id="loop"></p>
+
+  <script>
+    // 1️ push() example
+    let numbers = [10, 20, 30];
+    numbers.push(40);  // Adds 40 to the end
+    document.getElementById("push").innerHTML = "After push: " + numbers;
+
+    // 2️ pop() example
+    let colors = ["Red", "Green", "Blue"];
+    colors.pop();  // Removes last element (Blue)
+    document.getElementById("pop").innerHTML = "After pop: " + colors;
+
+    // 3️ shift() example
+    let names = ["Rithi", "Kavin", "Sara"];
+    names.shift();  // Removes first element (Rithi)
+    document.getElementById("shift").innerHTML = "After shift: " + names;
+
+    // 4️ unshift() example
+    let fruits = ["Banana", "Mango"];
+    fruits.unshift("Apple");  // Adds Apple to the beginning
+    document.getElementById("unshift").innerHTML = "After unshift: " + fruits;
+
+    // 5️ Print all elements using for loop
+    let cities = ["Chennai", "Madurai", "Coimbatore"];
+    let text = "";
+    for (let i = 0; i < cities.length; i++) {
+      text += cities[i] + "<br>";
+    }
+    document.getElementById("loop").innerHTML = text;
+  </script>
+</body>
+</html>
